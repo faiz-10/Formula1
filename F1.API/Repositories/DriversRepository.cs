@@ -40,7 +40,7 @@ namespace F1.API.Repositories
 
         public async Task<List<Driver>> GetDriversAsync()
         {
-            var drivers = await dbContext.Drivers.ToListAsync();
+            var drivers = await dbContext.Drivers.Include(d => d.Team).ToListAsync();
             return drivers;
         }
 

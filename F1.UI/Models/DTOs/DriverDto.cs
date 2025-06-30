@@ -1,6 +1,6 @@
-﻿using F1.API.Models.Domains;
+﻿using F1.UI.Models.Domains;
 
-namespace F1.API.Models.DTOs
+namespace F1.UI.Models.DTOs
 {
     public class DriverDto
     {

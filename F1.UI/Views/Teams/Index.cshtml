@@ -1,0 +1,26 @@
+﻿@using F1.UI.Models.DTOs
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<TeamDto>
+
+@{
+    <h3 class="mt-3">Teams</h3>
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Team</th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach(var team in Model)
+            {
+                <tr>
+                <td>@team.Id</td>
+                <td>@team.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
