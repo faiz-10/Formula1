@@ -11,6 +11,9 @@ namespace F1.API.Mappings
             CreateMap<Team, TeamDto>().ReverseMap();
             CreateMap<Team, AddTeamDto>().ReverseMap();
             CreateMap<Team, UpdateTeamDto>().ReverseMap();
+            CreateMap<Driver, DriverDto>().ReverseMap();
+            CreateMap<Driver, AddDriverDto>().ReverseMap();
+            CreateMap<Driver, UpdateDriverDto>().ReverseMap();  
         }
     }
 }

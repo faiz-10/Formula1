@@ -23,6 +23,7 @@ builder.Services.AddAutoMapper(typeof(AutoMapperProfiles));
 
 // Register Repositories
 builder.Services.AddScoped<ITeamsRepository, TeamsRepository>();
+builder.Services.AddScoped<IDriversRepository, DriversRepository>();
 
 var app = builder.Build();
 
